@@ -3,6 +3,7 @@ import Feed from "./comp/Feed";
 import RightBar from "./comp/RightBar";
 import NavBar from "./comp/NavBar";
 import { Box, Stack } from "@mui/material";
+import AddPost from "./comp/AddPost";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Feed />
         <RightBar />
       </Stack>
+      <AddPost />
     </Box>
   );
 }
