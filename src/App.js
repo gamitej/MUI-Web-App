@@ -14,7 +14,7 @@ function App() {
         <Feed />
         <RightBar />
       </Stack>
-      <AddPost />
+      <AddPost/>
     </Box>
   );
 }
