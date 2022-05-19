@@ -14,7 +14,7 @@ import {
 
 
 
-const Post = ({item}) => {
+const FeedPost = ({item}) => {
   return (
     <>
       <Card sx={{margin:4}}>
@@ -59,4 +59,4 @@ const Post = ({item}) => {
   );
 };
 
-export default Post;
+export default FeedPost;
