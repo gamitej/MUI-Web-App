@@ -17,7 +17,7 @@ import {
 const Post = ({item}) => {
   return (
     <>
-      <Card>
+      <Card sx={{margin:4}}>
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: `${item.color}` }} aria-label="recipe">
