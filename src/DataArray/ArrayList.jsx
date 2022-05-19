@@ -96,3 +96,15 @@ color:'blue'  ,subheader:'June 24, 2016',
   text:'Flower'
 }
 ]
+
+
+export const listRightBarPosts=[{
+  src:'https://material-ui.com/static/images/image-list/breakfast.jpg',
+  alt:'broken-img'
+},{
+  src:'https://material-ui.com/static/images/image-list/burgers.jpg',
+  alt:'broken-img'
+},{
+  src:'https://material-ui.com/static/images/image-list/camera.jpg',
+  alt:'broken-img'
+}]
