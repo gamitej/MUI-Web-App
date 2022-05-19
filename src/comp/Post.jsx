@@ -12,14 +12,16 @@ import {
   Typography,
 } from "@mui/material";
 
-const Post = () => {
+
+
+const Post = ({item}) => {
   return (
     <>
       <Card>
         <CardHeader
           avatar={
-            <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-              R
+            <Avatar sx={{ bgcolor: `${item.color}` }} aria-label="recipe">
+              {item.avatar}
             </Avatar>
           }
           action={
@@ -27,20 +29,18 @@ const Post = () => {
               <MoreVert />
             </IconButton>
           }
-          title="Shrimp and Chorizo Paella"
-          subheader="September 14, 2016"
+          title={item.title}
+          subheader={item.subheader}
         />
         <CardMedia
           component="img"
           height="10%"
-          image="https://images.pexels.com/photos/33044/sunflower-sun-summer-yellow.jpg?cs=srgb&dl=pexels-pixabay-33044.jpg&fm=jpg"
+          image={item.image}
           alt="Paella dish"
         />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
+            {item.text}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
