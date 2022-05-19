@@ -6,7 +6,7 @@ const RightBar = () => {
   return (
     <>
       <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
-        <Box position="fixed">
+        <Box position="fixed" width={300}>
           <Typography variant="h6" fontWeight={100}>
             Online Friends
           </Typography>
@@ -35,7 +35,7 @@ const RightBar = () => {
           <Typography variant="h6" fontWeight={100}>
             Latest Posts
           </Typography>
-          <ImageList cols={3}>
+          <ImageList cols={3} gap={5} rowHeight={100}>
             {listRightBarPosts.map((item) => (
               <ImageListItem key={item.img}>
                 <img
