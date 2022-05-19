@@ -142,3 +142,27 @@ export const listRightBarFriends = [
     src: "https://material-ui.com/static/images/avatar/5.jpg",
   },
 ];
+
+export const listLatestConvo = [
+  {
+    alt: "Remy Sharp",
+    src: "/static/images/avatar/1.jpg",
+    primary: "Brunch this weekend?",
+    typo: "Ali Connors",
+    text: " — I'll be in your neighborhood doing errands this…",
+  },
+  {
+    alt: "Travis Howard",
+    src: "/static/images/avatar/2.jpg",
+    primary: "Summer BBQ",
+    typo: "to Scott, Alex, Jennifer",
+    text: " — Wish I could come, but I'm out of town this…",
+  },
+  {
+    alt: "Cindy Baker",
+    src: "/static/images/avatar/3.jpg",
+    primary: "Oui Oui",
+    typo: "Sandra Adams",
+    text: " — Do you have Paris recommendations? Have you ever…",
+  },
+];
