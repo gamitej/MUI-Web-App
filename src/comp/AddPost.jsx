@@ -1,10 +1,18 @@
 import styled from "@emotion/styled";
-import { Add } from "@mui/icons-material";
+import {
+  Add,
+  EmojiEmotions,
+  Image,
+  PersonAdd,
+  VideoCameraBack,
+} from "@mui/icons-material";
 import {
   Avatar,
   Box,
+  Button,
   Fab,
   Modal,
+  Stack,
   TextField,
   Tooltip,
   Typography,
@@ -23,7 +31,7 @@ const UserBox = styled(Box)({
   justifyContent: "center",
   gap: "10px",
   marginTop: "20px",
-  marginBottom:'20px'
+  marginBottom: "20px",
 });
 
 const AddPost = () => {
@@ -75,6 +83,15 @@ const AddPost = () => {
             placeholder="What's on your mind ?"
             variant="standard"
           />
+          <Stack direction="row" gap={1} mt={2} mb={3}>
+            <EmojiEmotions color="primary" />
+            <Image color="secondary" />
+            <VideoCameraBack color="success" />
+            <PersonAdd color="error" />
+          </Stack>
+          <Button fullWidth variant="contained">
+            Post
+          </Button>
         </Box>
       </StyledModal>
     </>
