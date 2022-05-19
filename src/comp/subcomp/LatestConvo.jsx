@@ -41,10 +41,10 @@ const LatestConvo = () => {
           <>
             <ListItem alignItems="flex-start">
               <ListItemAvatar>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                <Avatar alt={item.alt} src={item.src} />
               </ListItemAvatar>
               <ListItemText
-                primary="Brunch this weekend?"
+                primary={item.primary}
                 secondary={
                   <>
                     <Typography
@@ -53,9 +53,9 @@ const LatestConvo = () => {
                       variant="body2"
                       color="text.primary"
                     >
-                      Ali Connors
+                      {item.typo}
                     </Typography>
-                    {" — I'll be in your neighborhood doing errands this…"}
+                    {`${item.text}`}
                   </>
                 }
               />
