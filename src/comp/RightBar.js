@@ -9,29 +9,9 @@ import {
 import React from "react";
 import { listRightBarPosts } from "../DataArray/ArrayList";
 import LatestConvo from "./subcomp/LatestConvo";
+import {listRightBarFriends} from '../DataArray/ArrayList'
 
-const listRightBarFriends = [
-  {
-    alt: "Remy Sharp",
-    src: "https://material-ui.com/static/images/avatar/1.jpg",
-  },
-  {
-    alt: "Travis Howard",
-    src: "https://material-ui.com/static/images/avatar/2.jpg",
-  },
-  {
-    alt: "Cindy Baker",
-    src: "https://material-ui.com/static/images/avatar/3.jpg",
-  },
-  {
-    alt: "Agnes Walker",
-    src: "https://material-ui.com/static/images/avatar/4.jpg",
-  },
-  {
-    alt: "Trevor Henderson",
-    src: "https://material-ui.com/static/images/avatar/5.jpg",
-  },
-];
+
 
 const RightBar = () => {
   return (
